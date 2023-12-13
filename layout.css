@@ -1,0 +1,153 @@
+html {
+    font-size: 62.5%;
+}
+body{
+    background-color: #83C05B;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.6rem;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+}
+header h1, header h2{
+    display: none;
+}
+figure img{
+    display: block;
+    max-width: 100%;
+}
+.navigation li{
+    width: 100%;
+    height: 30px;
+    background-color: #9DCD7C;
+    border: 1px solid darkgreen;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 18px;
+    box-shadow: 1px 1px 1px 1px grey;
+}
+li a{
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px rgb(41, 40, 40);
+}
+section p{
+    font-size: 22px;
+    padding: 14px;
+}
+#vision img{
+    display: none;
+}
+#boxes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#boxes > * {
+    flex-grow: 1;
+    flex-basis: 100%;
+    border: 1rem solid white;
+}
+#boxes h3{
+    background-color: lightgray;
+    padding: 1rem;
+    border-bottom: 1rem solid white;
+}
+#specials {
+    border-bottom: 1rem solid white;
+}
+#events {
+    border-top: 1rem solid white;
+    margin-top: 1rem;
+}
+#news{
+    margin-top: 1rem;
+}
+h3 span {
+    float: right;
+    font-size: 20px;
+}
+.makingRow{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: white;
+}
+.bold{
+    font-weight: bold;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+footer p{
+    font-size: 20px;
+    margin: -1.5rem;
+}
+.black {
+    color: black;
+}
+@media only screen and (min-width: 426px) {
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+    }
+    #vision section {
+        background-image: url('images/wall.jpeg');
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+    #vision {
+        display: flex;
+        flex-direction: row;
+        border: 1rem solid white;
+        margin-top: 1rem;
+    }
+    #vision img {
+        display: block;
+        float: right;
+    }
+    #boxes > * {
+        margin-top: 1rem;
+        gap: 1rem;
+        background-color: white;
+        margin-bottom: 1rem;
+    }
+    .for_tablet {
+        display: flex;
+        flex-direction: row;
+    }
+    #events{
+        margin-top: 0;
+        border-top: 0;
+    }
+    #news{
+        margin-top: 0;
+    }
+    #specials {
+        border-bottom: 0;
+    
+    }
+}
+@media only screen and (min-width: 769px) {
+    #boxes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        flex-basis: 0;
+    }
+    #news{
+        margin-top: 1rem;
+        margin-left: -1rem;
+        max-width: 33%;
+    }
+    
+  }
